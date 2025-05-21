@@ -1,63 +1,106 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-h1 {
-  color: #1d1d1d;
-  margin-bottom: 10px;
-}
-
-p {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.btn {
-  display: block;
-  width: 250px;
-  margin: 10px auto;
-  padding: 15px;
-  font-size: 16px;
-  background-color: #1d1d1d;
+header, footer {
+  background-color: #222;
   color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s;
+  padding: 30px 0;
+  text-align: center;
 }
 
-.btn:hover {
-  background-color: #444;
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
 }
 
-.whatsapp {
-  background-color: #25D366;
+section {
+  margin-bottom: 50px;
 }
 
-.whatsapp:hover {
-  background-color: #1EBE5D;
+h2 {
+  margin-bottom: 15px;
+  color: #004080;
 }
 
-.facebook {
-  background-color: #3b5998;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.facebook:hover {
-  background-color: #2d4373;
+ul li::before {
+  content: \"\\2022\";
+  color: #004080;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
-.instagram {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
 }
 
-.instagram:hover {
-  opacity: 0.9;
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00264d;
+}
+
+blockquote {
+  border-left: 4px solid #004080;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.hero {
+  position: relative;
+  background: url('../images/fundo.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-weight: bold;
+}
+
+.navbar .btn {
+  margin-left: 10px;
 }

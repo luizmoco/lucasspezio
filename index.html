@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lucas Spézio Advocacia</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Spézio Advocacia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <h1>Lucas Spézio Advocacia</h1>
-  <p>Bem-vindo! Escolha uma das opções abaixo para falar conosco:</p>
+  <header class="hero">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo_full.png" alt="Spézio Advocacia" height="40">
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#sobre">Sobre nós</a>
+          </li>
+        </ul>
+        <a href="#contato" class="btn btn-success">Fale conosco</a>
+      </div>
+    </div>
+  </nav>
 
-  <a href="https://www.instagram.com/lucas.spezio/" class="btn instagram" target="_blank">Instagram</a>
-  <a href="https://www.facebook.com/lucas.spezio" class="btn facebook" target="_blank">Facebook</a>
-  <a href="https://wa.me/5545991170398" class="btn whatsapp" target="_blank">WhatsApp Pessoal</a>
-  <a href="https://wa.me/5545999342733?text=Gostaria%20de%20um%20or%C3%A7amento%20..." class="btn whatsapp" target="_blank">
-    WhatsApp (Orçamento)
-  </a>
+  <div class="hero-content d-flex align-items-center justify-content-center text-white text-center">
+    <div>
+      <h1 class="display-4 fw-bold">
+        Soluções jurídicas eficazes,<br>
+        atendimento humanizado e foco<br>
+        em resultados.
+      </h1>
+      <p class="lead mt-3">
+        Na Spézio Advocacia, unimos conhecimento técnico, ética e agilidade para oferecer o melhor<br>
+        suporte jurídico para você ou sua empresa.
+      </p>
+      <div class="mt-4">
+        <a href="#servicos" class="btn btn-success me-2">Nossos serviços</a>
+        <a href="#contato" class="btn btn-outline-light me-2">Fale conosco</a>
+        <a href="https://wa.me/SEU_NUMERO_AQUI" class="btn btn-outline-light">
+          <img src="images/whataspp_ico.png" alt="WhatsApp" style="width:20px; margin-right:5px;">
+          Whatsapp
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>Fale conosco: 45 9 8765 4321 | email@spezio.com.br</p>
+    <p>R. Osvaldo Cruz, 3597 - Cancelli, Cascavel - PR, 85811-110</p>
+    <p>© 2024 Spezio Advogados. Todos os Direitos Reservados. Designed by Métrica</p>
+  </div>
+</footer>
 
-  <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
